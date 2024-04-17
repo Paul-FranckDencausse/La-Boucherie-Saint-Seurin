@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La boucherie</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body {
+                font-family: "Times New Roman", Georgia, Serif;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Playfair Display";
+                letter-spacing: 5px;
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button"> La boucherie</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">A propos</a>
+                <a href="#menu" class="w3-bar-item w3-button">Nos viandes</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="devanture.jpg" alt="devanture de la boucherie" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge w3-white">La boucherie</h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="interieur.jpg" class="w3-round w3-image w3-opacity-min" alt="intérieur  de la boutique" width="600"
+                    height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">A propos de la Boucherie</h1><br>
+                <h5 class="w3-center">Maison fondée en 1793</h5>
+                <p class="w3-large">La Boucherie, située au cœur d'un pittoresque village français, porte en elle une histoire riche débutée en 1793. Fondée par Étienne Marchand, un boucher visionnaire avec un profond respect pour son métier, La Boucherie fut établie à une époque où la campagne française commençait tout juste à se remettre des tumultes de la révolution.
+
+
+                <p class="w3-large w3-text-grey w3-hide-medium">Né dans une famille de fermiers modestes, Étienne était animé par une passion pour la boucherie, apprise de son père et perfectionnée au cours de ses apprentissages à Paris. À son retour au village, il apporta non seulement un savoir-faire, mais aussi une idée révolutionnaire : une boutique qui offrirait les meilleures viandes, préparées avec respect et art.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Viandes fraîches</h1><br>
+                <h4>Côte de bœuf</h4>
+                <p class="w3-text-grey">Parfaitement maturée, prête pour le gril.</p><br>
+
+                <h4>Poulet de Bresse </h4>
+                <p class="w3-text-grey">Élevé en plein air, tendre et savoureux.</p><br>
+
+                <h4>Veau de lait</h4>
+                <p class="w3-text-grey">Tendre, provenant de veaux élevés sous la mère.</p><br>
+
+                <h4>Porc fermier</h4>
+                <p class="w3-text-grey"> Viande juteuse, excellente en rôtis ou en saucisses maison.</p><br>
+
+              
+              
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <img src="cote.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Charcuterie</h1><br>
+                <h4>Saucisson sec</h4>
+                <p class="w3-text-grey">Affiné avec des herbes de Provence.</p><br>
+
+                <h4>Jambon de Bayonne</h4>
+                <p class="w3-text-grey">Salé naturellement et séché pendant 12 mois.</p><br>
+
+                <h4>Pâté de campagne</h4>
+                <p class="w3-text-grey">Rustique, avec une touche de cognac.</p><br>
+
+                <h4>Andouillette</h4>
+                <p class="w3-text-grey">  Appréciée des amateurs de saveurs fortes.</p><br>
+            </div>
+            
+           
+        </div>
+      
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>N'hésitez pas à nous contacter.</p>
+            <p class="w3-text-blue-grey w3-large"><b>La Terre , troisième planète en partant du soleil , la Voie Lactée.</b></p>
+            <p> Par mail : etienne@leboucher.fr. Téléphone : 118 218. Ou laissez-nous un message ci-dessous :</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Nom" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="number" placeholder="Combien d'invités?" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required
+                        name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message"
+                        required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">ENVOYER</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+    <p>This website  is hosted on W3schools Spaces. </p>
+    <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+    <!-- Footer end. -->
+    </footer>
+
+</body>
+
+</html>
