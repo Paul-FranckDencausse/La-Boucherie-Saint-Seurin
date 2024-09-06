@@ -1,32 +1,58 @@
 
----
+# Boucherie Saint-Seurin - Site Web
 
-# Guide d'utilisation - Site Web de la Boucherie
+Bienvenue sur le dépôt du site web de la **Boucherie Saint-Seurin**, située au cœur de Bordeaux. Ce projet a été développé pour offrir aux clients une présentation complète de la boucherie, de ses produits, ainsi que ses informations de contact.
 
-Bienvenue dans le guide d'utilisation du site web de votre boucherie ! Ce guide vous aidera à comprendre comment utiliser et naviguer sur votre site web pour promouvoir votre entreprise et attirer de nouveaux clients.
+## Fonctionnalités
 
-## Contenu du Site Web
+- **Présentation de la boucherie** : Découvrez l'histoire et les valeurs de la Boucherie Saint-Seurin.
+- **Nos viandes et charcuteries** : Une section dédiée aux différents packs de viandes proposés, ainsi qu'une sélection de charcuteries artisanales.
+- **Section contact** : Informations pratiques telles que l'adresse, les horaires et les moyens de contacter la boucherie.
+- **Responsive design** : Le site est entièrement responsive et s'adapte à différents types d'écrans (ordinateurs, tablettes, mobiles) grâce au framework CSS W3Schools.
 
-### À propos
-Dans cette section, vous pouvez partager l'histoire de votre boucherie. Racontez comment elle a été fondée, par qui, et quels sont vos principes et valeurs en tant que boucher. C'est un excellent moyen d'engager vos clients et de leur faire découvrir l'authenticité de votre entreprise.
+## Technologies utilisées
 
-### Nos Viandes
-Ici, vous pouvez présenter les différents types de viandes fraîches que vous proposez à la vente. Vous pouvez inclure des descriptions de chaque type de viande, comme la côte de bœuf, le poulet de Bresse, le veau de lait, etc. C'est une opportunité pour mettre en valeur la qualité et la diversité de vos produits.
+- **HTML5** : Langage de base utilisé pour structurer le site.
+- **CSS (via W3.CSS)** : Pour le style et le design du site.
+- **Responsive Design** : Le site s'adapte automatiquement aux différentes tailles d'écrans.
+- **Hébergement** : Le site est hébergé via W3Schools Spaces.
 
-### Charcuterie
-Cette section est dédiée à votre charcuterie. Vous pouvez y présenter vos produits comme le saucisson sec, le jambon de Bayonne, le pâté de campagne, etc. C'est l'occasion de mettre en avant votre savoir-faire artisanal et de susciter l'appétit de vos clients.
+## Structure du projet
 
-### Contact
-Dans cette section, vos clients peuvent trouver vos coordonnées pour vous contacter. Vous pouvez inclure votre adresse e-mail, votre numéro de téléphone et même un formulaire de contact pour les messages en ligne. Assurez-vous que vos clients sachent comment vous joindre facilement.
+Le projet est organisé comme suit :
 
-## Utilisation du Site Web
-Le site web est conçu pour être simple et intuitif à utiliser. Pour naviguer entre les différentes sections, utilisez simplement les liens dans la barre de navigation en haut de la page. Cliquez sur "A propos" pour en savoir plus sur votre boucherie, "Nos viandes" pour découvrir votre sélection de viandes fraîches, et ainsi de suite.
 
-## Coûts
-- **Nom de domaine** : Un nom de domaine est l'adresse de votre site web sur internet (par exemple, www.laboucherie.fr). Son coût peut varier en fonction de l'extension (.fr, .com, etc.) et du fournisseur de services. Prévoyez environ 10 à 20 euros par an pour un nom de domaine standard.
+├── index.html        # Le fichier HTML principal
+├── bandeau.png       # Image de bannière utilisée dans le header
+├── couple.jpg        # Image de l'intérieur de la boutique
+├── pierrade.jpg      # Image des viandes (pack pierrade)
+├── charcuterie.jpg   # Image des charcuteries
+└── README.md         # Ce fichier
+```
 
-- **Hébergement** : L'hébergement web est un service qui permet de stocker les fichiers de votre site web sur des serveurs accessibles en ligne. Les tarifs d'hébergement dépendent du fournisseur, de la capacité de stockage, de la bande passante et d'autres fonctionnalités. En général, vous pouvez vous attendre à payer entre 5 et 50 euros par mois pour un hébergement de qualité.
+ Comment lancer le projet
 
-## Remarque
-Ce site web a été créé pour vous aider à promouvoir votre boucherie en ligne. Il est hébergé sur un service web, ce qui signifie que vous n'avez pas besoin de vous soucier de la technologie sous-jacente. Vous pouvez simplement partager l'adresse de votre site avec vos clients et leur permettre de découvrir tout ce que votre boucherie a à offrir.
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/ton-compte/boucherie-saint-seurin.git
+   ```
 
+2. Ouvrir le fichier `index.html` dans votre navigateur :
+   ```bash
+   open index.html
+   ```
+
+## Hébergement
+
+Ce site est hébergé via **W3Schools Spaces**. Vous pouvez consulter le site en ligne à l'adresse suivante :
+
+[https://ton-nom-utilisateur.w3spaces.com](https://ton-nom-utilisateur.w3spaces.com)
+
+## Auteur
+
+Ce site a été conçu et développé par **Paul-Franck Dencausse** dans le cadre de projets de développement web. Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter.
+
+## Licence
+
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, le modifier et le redistribuer.
+```
