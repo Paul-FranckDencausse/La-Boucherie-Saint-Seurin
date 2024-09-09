@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Inclusion du fichier CSS W3Schools -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Inclusion de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Style général du corps du texte */
         body {
@@ -168,39 +170,47 @@
             </div>
         </div>
 
-        <hr>
-         <!-- Adresse physique avec lien Google Maps -->
-        <p><b>Adresse :</b>
-            <a href="https://www.google.com/maps/search/?api=1&query=6+Rue+Capdeville,+33000+Bordeaux" target="_blank">6 rue Capdeville, 33000 Bordeaux</a></b></p>
-        
-        
-        <!-- Lien pour envoyer un e-mail -->
-        <p><b>E-mail :</b> <a href="mailto:boucherie.saintseurin@hotmail.com">boucherie.saintseurin@hotmail.com</a></p>
-        
-        <!-- Lien pour appeler directement (fonctionne sur mobile) -->
-        <p><b>Téléphone :</b> <a href="tel:+33556485864">+33 5 56 48 58 64</a></p>
-        
-        <!-- Horaires d'ouverture -->
-        <h4>Horaires d'ouverture :</h4>
-        <p>
-            Lundi : Fermé <br>
-            Mardi : 08:00 - 13:00 / 16:00 - 19:30 <br>
-            Mercredi : 08:00 - 13:00 / 16:00 - 19:30 <br>
-            Jeudi : 08:00 - 13:00 / 16:00 - 19:30 <br>
-            Vendredi : 08:00 - 13:00 / 16:00 - 19:30 <br>
-            Samedi : 08:00 - 13:00 / 16:00 - 19:00 <br>
-            Dimanche : 08:00 - 13:00
+   <hr>
+<!-- Section contact et horaires d'ouverture -->
+<div class="section-container" style="text-align: center; max-width: 600px; margin: 0 auto;">
+    <h4>Contact : </h4>
+    <!-- Coordonnées -->
+    <div class="footer-contact">
+        <p><i class="fas fa-map-marker-alt footer-icons"></i>
+            <a href="https://www.google.com/maps/search/?api=1&query=6+Rue+Capdeville,+33000+Bordeaux" target="_blank" style="text-decoration: none; color: #73150D;">6 rue Capdeville, 33000 Bordeaux</a>
+        </p>
+        <p><i class="fas fa-envelope footer-icons"></i>
+            <a href="mailto:boucherie.saintseurin@hotmail.com" style="text-decoration: none; color: #73150D;">boucherie.saintseurin@hotmail.com</a>
+        </p>
+        <p><i class="fas fa-phone-alt footer-icons"></i>
+            <a href="tel:+33556485864" style="text-decoration: none; color: #73150D;">+33 5 56 48 58 64</a>
         </p>
     </div>
 
-    <footer class="w3-center w3-padding-32" style="background-color: #FED3A8; color: #73150D;">
-        <p><b>Une réalisation du studio Sine Linea</b></p>
-        <p>Ce site est hébergé sur W3 School spaces</p>
-    </footer>
+    <!-- Horaires d'ouverture -->
+    <h4>Horaires d'ouverture :</h4>
+    <p>
+        <b>Lundi :</b> Fermé <br>
+        <b>Mardi</b> : 08:00 - 13:00 / 16:00 - 19:30 <br>
+        <b>Mercredi</b> : 08:00 - 13:00 / 16:00 - 19:30 <br>
+        <b>Jeudi</b> : 08:00 - 13:00 / 16:00 - 19:30 <br>
+        <b>Vendredi</b> : 08:00 - 13:00 / 16:00 - 19:30 <br>
+        <b>Samedi</b> : 08:00 - 13:00 / 16:00 - 19:00 <br>
+        <b>Dimanche</b> : 08:00 - 13:00
+    </p>
+</div>
+
+<br>
+
 
 </div>
 
-
+ <!-- Footer amélioré avec icônes pour les infos de contact -->
+<footer class="w3-padding-32" style="background-color: #FED3A8; color: #73150D;">
+    
+    <p class="w3-center"><b>Une réalisation du studio Sine Linea</b></p>
+    <p class="w3-center">Ce site est hébergé sur W3 School spaces</p>
+</footer>
 </body>
 
 </html>
