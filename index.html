@@ -1,123 +1,206 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Meta tags -->
     <title>La boucherie</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- External CSS stylesheets -->
+    <!-- Inclusion du fichier CSS W3Schools -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    <!-- Internal CSS styles -->
     <style>
+        /* Style général du corps du texte */
         body {
             font-family: "Times New Roman", Georgia, Serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8; /* Couleur de fond de la page */
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        /* Styles pour les titres h1 à h6 */
+        h1, h2, h3, h4, h5, h6 {
             font-family: "Playfair Display";
             letter-spacing: 5px;
         }
+
+        /* Navbar */
+        .w3-bar {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Sections */
+        .section-container {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #FED3A8;
+            color: #73150D;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            color: #CE6857;
+            margin-bottom: 1rem;
+        }
+
+        .section-content h4 {
+            color: #73150D;
+        }
+
+        /* Footer */
+        footer {
+            border-radius: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .w3-image {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .w3-container a {
+            color: #73150D;
+        }
     </style>
 </head>
+
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-        <a href="#home" class="w3-bar-item w3-button"> La boucherie</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
-            <a href="#about" class="w3-bar-item w3-button">A propos</a>
-            <a href="#menu" class="w3-bar-item w3-button">Nos viandes</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-    </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <img class="w3-image" src="devanture.jpg" alt="devanture de la boucherie" width="1600" height="800">
-    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-        <h1 class="w3-xxlarge w3-white">La boucherie</h1>
-    </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-    <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="about">
-        <div class="w3-col m6 w3-padding-large w3-hide-small">
-            <img src="interieur.jpg" class="w3-round w3-image w3-opacity-min" alt="intérieur  de la boutique" width="600" height="750">
-        </div>
-
-        <div class="w3-col m6 w3-padding-large">
-            <h1 class="w3-center">A propos de la Boucherie</h1><br>
-            <h5 class="w3-center">Maison fondée en 1793</h5>
-            <p class="w3-large">La Boucherie, située au cœur d'un pittoresque village français, porte en elle une histoire riche débutée en 1793. Fondée par Étienne Marchand, un boucher visionnaire avec un profond respect pour son métier, La Boucherie fut établie à une époque où la campagne française commençait tout juste à se remettre des tumultes de la révolution.</p>
-
-            <p class="w3-large w3-text-grey w3-hide-medium">Né dans une famille de fermiers modestes, Étienne était animé par une passion pour la boucherie, apprise de son père et perfectionnée au cours de ses apprentissages à Paris. À son retour au village, il apporta non seulement un savoir-faire, mais aussi une idée révolutionnaire : une boutique qui offrirait les meilleures viandes, préparées avec respect et art.</p>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: #FED3A8; color: #73150D;">
+            <a href="#home" class="w3-bar-item w3-button" style="color: #73150D;"><b>La boucherie Saint Seurin</b></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button" style="color: #73150D;">A propos</a>
+                <a href="#menu" class="w3-bar-item w3-button" style="color: #73150D;">Nos viandes</a>
+                <a href="#contact" class="w3-bar-item w3-button" style="color: #73150D;">Contact</a>
+            </div>
         </div>
     </div>
 
-    <hr>
+    <!-- En-tête avec une image de bannière -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="bandeau.png" alt="bannière de la boucherie" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <!-- Contenu positionné sur l'image (vide ici) -->
+        </div>
+    </header>
 
-    <!-- Menu Section -->
-    <div class="w3-row w3-padding-64" id="menu">
-        <!-- Section for displaying fresh meats -->
-        <div class="w3-col l6 w3-padding-large">
-            <h1 class="w3-center">Viandes fraîches</h1><br>
-            <h4>Côte de bœuf</h4>
-            <p class="w3-text-grey">Parfaitement maturée, prête pour le gril.</p><br>
+    <!-- Contenu principal de la page -->
+    <div class="w3-content" style="max-width:1100px">
 
-            <!-- Other meat items -->
-            <!-- Poulet de Bresse, Veau de lait, Porc fermier, etc. -->
-
+        <!-- Section 'A propos' -->
+        <div class="section-container w3-row w3-padding-64" id="about">
+            <!-- Colonne avec image, cachée sur petits écrans -->
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="couple.jpg" class="w3-round w3-image w3-opacity-min" alt="intérieur de la boutique" width="600" height="750">
+            </div>
+            <!-- Colonne avec texte de présentation -->
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">La boucherie Saint-Seurin</h1><br>
+                <h5 class="w3-center">Votre boucherie à Bordeaux</h5>
+                <p class="w3-large">Découvrez la Boucherie Saint Seurin, idéalement située au cœur de Bordeaux, au 6 Rue Capdeville. Votre boucherie de proximité vous accueille du mardi au dimanche avec des produits de qualité, soigneusement sélectionnés pour leur goût unique. Spécialisée dans les viandes issues de circuits courts, la Boucherie Saint Seurin valorise l'authenticité et le fait-maison. Passionnée par son métier, l’équipe s'engage à vous offrir le meilleur de la boucherie bordelaise. Rendez-vous en boutique ou sur la boutique en ligne pour savourer le vrai goût du local.</p>
+            </div>
         </div>
 
-        <!-- Image for the fresh meat section -->
-        <div class="w3-col l6 w3-padding-large">
-            <img src="cote.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+        <hr>
+
+        <!-- Section 'Menu' des viandes disponibles -->
+        <div class="section-container w3-row w3-padding-64" id="menu">
+            <!-- Colonne gauche avec les descriptions des packs -->
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="section-header">Nos packs</h1><br>
+                
+                <h4>Pierrade</h4>
+                <p>Découvrez notre pack pierrade pour 3/4 personnes composé de :
+                    1 magret d'environ 300g dégraissé,
+                    200g de filet de dinde,
+                    200g de pièce à bif (boeuf),
+                    200g de blanc de poulet,
+                    soit un poids total de 900g.</p><br>
+
+                <h4>Viande de boeuf</h4>
+                <p>Découvrez notre pack de viande de boeuf pour 5/6 personnes composé de :
+                    1 kg de rôti de boeuf,
+                    1 kg de viande à bourguignon / pot au feu / daube,
+                    1 kg de pièce à bif (boeuf) ou fondue,
+                    soit un poids total de 3 kg.</p><br>
+
+                <h4>Pour les petits</h4>
+                <p>Découvrez notre pack des petits composé de :
+                    1 cordon bleu de 145g,
+                    1 milanaise de 150g,
+                    1 steak haché de 120g,
+                    1 tranche de jambon blanc de 100g,
+                    soit un poids total de 515g.</p><br>
+            </div>
+            <!-- Colonne droite avec une image des viandes -->
+            <div class="w3-col l6 w3-padding-large">
+                <img src="pierrade.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+            </div>
         </div>
 
-        <!-- Additional section for displaying charcuterie -->
-        <div class="w3-col l6 w3-padding-large">
-            <h1 class="w3-center">Charcuterie</h1><br>
-            <h4>Saucisson sec</h4>
-            <p class="w3-text-grey">Affiné avec des herbes de Provence.</p><br>
+        <br>
+          
+        <!-- Section Charcuterie avec image à gauche et texte à droite -->
+        <div class="section-container w3-row w3-padding-64" id="charcuterie">
+            <!-- Texte à droite décrivant les produits de charcuterie -->
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="section-header">Charcuterie</h1><br>
 
-            <!-- Other charcuterie items -->
-            <!-- Jambon de Bayonne, Pâté de campagne, Andouillette, etc. -->
+                <h4>Bacon fumé</h4>
+                <p>Un bacon fabriqué à partir de viande de porc salée et fumée au bois de hêtre avec un nerf vertébral mais sans chaînette de poitrine.</p><br>
 
+                <h4>Coppa</h4>
+                <p>Une échine de porc désossée, salée au sel sec et séchée.</p><br>
+
+                <h4>Jambon blanc Noixfine AC 3 noix</h4>
+                <p>Un jambon de porc cuit supérieur avec couenne.</p><br>
+
+                <h4>Jambon de Bayonne 12 mois - Maison Loste</h4>
+                <p>Un jambon issu de porc né, élevé et transformé dans le Sud-Ouest. Lentement affiné, sa viande est rouge foncée et sa saveur douce.</p><br>
+            </div>
+            
+            <!-- Image de la charcuterie à gauche -->
+            <div class="w3-col l6 w3-padding-large">
+                <img src="charcuterie.jpg" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">
+            </div>
         </div>
+
+        <hr>
+         <!-- Adresse physique avec lien Google Maps -->
+        <p><b>Adresse :</b>
+            <a href="https://www.google.com/maps/search/?api=1&query=6+Rue+Capdeville,+33000+Bordeaux" target="_blank">6 rue Capdeville, 33000 Bordeaux</a></b></p>
+        
+        
+        <!-- Lien pour envoyer un e-mail -->
+        <p><b>E-mail :</b> <a href="mailto:boucherie.saintseurin@hotmail.com">boucherie.saintseurin@hotmail.com</a></p>
+        
+        <!-- Lien pour appeler directement (fonctionne sur mobile) -->
+        <p><b>Téléphone :</b> <a href="tel:+33556485864">+33 5 56 48 58 64</a></p>
+        
+        <!-- Horaires d'ouverture -->
+        <h4>Horaires d'ouverture :</h4>
+        <p>
+            Lundi : Fermé <br>
+            Mardi : 08:00 - 13:00 / 16:00 - 19:30 <br>
+            Mercredi : 08:00 - 13:00 / 16:00 - 19:30 <br>
+            Jeudi : 08:00 - 13:00 / 16:00 - 19:30 <br>
+            Vendredi : 08:00 - 13:00 / 16:00 - 19:30 <br>
+            Samedi : 08:00 - 13:00 / 16:00 - 19:00 <br>
+            Dimanche : 08:00 - 13:00
+        </p>
     </div>
 
-    <!-- Contact Section -->
-    <div class="w3-container w3-padding-64" id="contact">
-        <h1>Contact</h1><br>
-        <p>N'hésitez pas à nous contacter.</p>
-        <p class="w3-text-blue-grey w3-large"><b>La Terre , troisième planète en partant du soleil , la Voie Lactée.</b></p>
-        <p> Par mail : etienne@leboucher.fr. Téléphone : 118 218. Ou laissez-nous un message ci-dessous :</p>
-        <form action="/action_page.php" target="_blank">
-            <!-- Form inputs for name, number of guests, date and time, message -->
-            <!-- Submit button to send the message -->
-        </form>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-light-grey w3-padding-32">
-        <p>This website is hosted on W3schools Spaces.</p>
-        <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+    <footer class="w3-center w3-padding-32" style="background-color: #FED3A8; color: #73150D;">
+        <p><b>Une réalisation du studio Sine Linea</b></p>
+        <p>Ce site est hébergé sur W3 School spaces</p>
     </footer>
 
 </div>
 
+
 </body>
+
 </html>
