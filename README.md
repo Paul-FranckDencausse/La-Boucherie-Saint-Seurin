@@ -41,7 +41,7 @@ Interactions :
 Cliquer sur l'adresse affiche l'emplacement dans Google Maps.
 Cliquer sur l'e-mail ouvre une fenêtre pour envoyer un message.
 Cliquer sur le numéro de téléphone permet de lancer un appel directement sur mobile.
-CONTRIBUTING 
+Contributing
 Paul-Franck Dencausse - Développeur principal du projet.
 Licence
 Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le distribuer tant que la mention du développeur original est incluse.
