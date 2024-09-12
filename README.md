@@ -1,4 +1,4 @@
-
+#
 
 La Boucherie Saint Seurin - Site Web
 Ce projet est un site vitrine pour La Boucherie Saint Seurin, située à Bordeaux. Le site présente les produits et services de la boucherie, notamment ses viandes et charcuteries, avec des informations sur la localisation, les horaires d'ouverture, ainsi qu'une section de contact.
