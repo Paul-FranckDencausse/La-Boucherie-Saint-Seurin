@@ -68,18 +68,62 @@
 </head>
 
 <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: #FED3A8; color: #73150D;">
-            <a href="#home" class="w3-bar-item w3-button" style="color: #73150D;"><b>La boucherie Saint Seurin</b></a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button" style="color: #73150D;">A propos</a>
-                <a href="#menu" class="w3-bar-item w3-button" style="color: #73150D;">Nos viandes</a>
-                <a href="#contact" class="w3-bar-item w3-button" style="color: #73150D;">Contact</a>
-            </div>
-        </div>
-    </div>
+   <!-- Navbar (sit on top) -->
+
+   <div class="w3-top">
+       <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: #FED3A8; color: #73150D;">
+           <a href="#home" class="w3-bar-item w3-button" style="color: #73150D;"><b>La boucherie Saint Seurin</b></a>
+
+           <!-- Menu pour grands écrans -->
+           <div class="w3-right w3-hide-small">
+               <a href="#about" class="w3-bar-item w3-button" style="color: #73150D;">A propos</a>
+               
+               <!-- Menu déroulant pour "Nos viandes" -->
+               <div class="w3-dropdown-hover">
+                   <button class="w3-button" style="color: #73150D;">Nos viandes <i class="fas fa-caret-down"></i></button>
+                   <div class="w3-dropdown-content w3-bar-block" style="background-color: #FED3A8;">
+                       <a href="#menu" class="w3-bar-item w3-button" style="color: #73150D;">Bœuf</a>
+                       <a href="#charcuterie" class="w3-bar-item w3-button" style="color: #73150D;">Veau</a>
+                       <a href="#menu" class="w3-bar-item w3-button" style="color: #73150D;">Agneau</a>
+                       <a href="#charcuterie" class="w3-bar-item w3-button" style="color: #73150D;">Porc</a>
+                       <a href="#menu" class="w3-bar-item w3-button" style="color: #73150D;">Plats cuisinés</a>
+                   </div>
+               </div>
+               
+               <a href="#contact" class="w3-bar-item w3-button" style="color: #73150D;">Contact</a>
+               <a href="./formulaire.html" class="w3-bar-item w3-button">Commander</a>
+           </div>
+
+           <!-- Bouton hamburger pour petits écrans -->
+           <div class="w3-right w3-hide-large">
+               <span class="w3-bar-item hamburger-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></span>
+           </div>
+       </div>
+   </div>
+
+   <!-- Menu déroulant pour petits écrans -->
+   <div id="mobile-menu" class="w3-bar-block w3-hide" style="background-color: #FED3A8; color: #73150D;">
+    <br>
+    <br>
+       <a href="#about" class="w3-bar-item w3-button">A propos</a>
+       
+       <!-- Menu déroulant pour "Nos viandes" dans le menu mobile -->
+       <div class="w3-dropdown-click">
+           <button class="w3-button" onclick="toggleDropdown()" style="color: #73150D;">Nos viandes <i class="fas fa-caret-down"></i></button>
+           <div id="mobile-dropdown" class="w3-dropdown-content w3-bar-block" style="background-color: #FED3A8;">
+               <a href="#menu" class="w3-bar-item w3-button">Bœuf</a>
+               <a href="#charcuterie" class="w3-bar-item w3-button">Veau</a>
+               <a href="#menu" class="w3-bar-item w3-button">Agneau</a>
+               <a href="#charcuterie" class="w3-bar-item w3-button">Porc</a>
+               <a href="#menu" class="w3-bar-item w3-button">Plats cuisinés</a>
+           </div>
+       </div>
+
+       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+       <a href="./formulaire.html" class="w3-bar-item w3-button">Commander</a>
+     
+   </div>
+
 
     <!-- En-tête avec une image de bannière -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
@@ -197,7 +241,7 @@
         <br>
    <hr>
 <!-- Section contact et horaires d'ouverture -->
-<div class="section-container" style="text-align: center; max-width: 600px; margin: 0 auto;">
+<div class="section-container " style="text-align: center; max-width: 600px; margin: 0 auto;" id = "contact">
     <h4>Contact : </h4>
     <!-- Coordonnées -->
     <div class="footer-contact">
@@ -233,9 +277,30 @@
  <!-- Footer amélioré avec icônes pour les infos de contact -->
 <footer class="w3-padding-32" style="background-color: #FED3A8; color: #73150D;">
     
-    <p class="w3-center"><b>Une réalisation du studio Sine Linea</b></p>
+    <p class="w3-center"><b>Site réalisé par Paul-Franck Dencausse</b></p>
   
 </footer>
+<script>
+    // Fonction pour ouvrir/fermer le menu mobile
+    function toggleMenu() {
+        var menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('w3-hide')) {
+            menu.classList.remove('w3-hide');
+        } else {
+            menu.classList.add('w3-hide');
+        }
+    }
+
+    // Fonction pour le dropdown dans le menu mobile
+    function toggleDropdown() {
+        var dropdown = document.getElementById('mobile-dropdown');
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    }
+</script>
 </body>
 
 </html>
