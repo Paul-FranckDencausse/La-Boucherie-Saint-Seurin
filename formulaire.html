@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La boucherie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Inclusion du fichier CSS W3Schools -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Inclusion de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style général du corps du texte */
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8; /* Couleur de fond de la page */
+        }
+
+        /* Styles pour les titres h1 à h6 */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 4px;
+        }
+
+        /* Navbar */
+        .w3-bar {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .w3-bar-item {
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section-container {
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #FED3A8;
+            color: #73150D;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+        }
+
+        .section-header {
+            text-align: center;
+            color: #CE6857;
+            margin-bottom: 1rem;
+        }
+
+        .section-content h4 {
+            color: #73150D;
+        }
+
+        /* Footer */
+        footer {
+            border-radius: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            padding: 1rem 0;
+        }
+
+        .footer-content {
+            text-align: center;
+            color: #73150D;
+        }
+
+        .w3-image {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .w3-container a {
+            color: #73150D;
+        }
+
+        /* Formulaire Google centré */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        /* Style des boutons dans le menu déroulant */
+        .w3-dropdown-content .w3-bar-item {
+            transition: background-color 0.3s ease;
+        }
+
+        .w3-dropdown-content .w3-bar-item:hover {
+            background-color: #CE6857;
+            color: white;
+        }
+
+        /* Styles pour le footer avec icônes */
+        .social-icons {
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #73150D;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #CE6857;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: #FED3A8; color: #73150D;">
+            <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;"><b>La boucherie Saint Seurin</b></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">A propos</a>
+                
+                <!-- Menu déroulant pour "Nos viandes" -->
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button" style="color: #73150D;">Nos viandes <i class="fas fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block" style="background-color: #FED3A8;">
+                        <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Bœuf</a>
+                        <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Veau</a>
+                        <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Agneau</a>
+                        <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Porc</a>
+                        <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Plats cuisinés</a>
+                    </div>
+                </div>
+                
+                <a href="./index.html" class="w3-bar-item w3-button" style="color: #73150D;">Contact</a>
+            </div>
+        </div>
+   <!-- Menu déroulant pour petits écrans -->
+   <div id="mobile-menu" class="w3-bar-block w3-hide" style="background-color: #FED3A8; color: #73150D;">
+    <br>
+    <br>
+       <a href="#about" class="w3-bar-item w3-button">A propos</a>
+       
+       <!-- Menu déroulant pour "Nos viandes" dans le menu mobile -->
+       <div class="w3-dropdown-click">
+           <button class="w3-button" onclick="toggleDropdown()" style="color: #73150D;">Nos viandes <i class="fas fa-caret-down"></i></button>
+           <div id="mobile-dropdown" class="w3-dropdown-content w3-bar-block" style="background-color: #FED3A8;">
+               <a href="#menu" class="w3-bar-item w3-button">Bœuf</a>
+               <a href="#charcuterie" class="w3-bar-item w3-button">Veau</a>
+               <a href="#menu" class="w3-bar-item w3-button">Agneau</a>
+               <a href="#charcuterie" class="w3-bar-item w3-button">Porc</a>
+               <a href="#menu" class="w3-bar-item w3-button">Plats cuisinés</a>
+           </div>
+       </div>
+
+       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+       <a href="./formulaire.html" class="w3-bar-item w3-button">Commander</a>
+     
+   </div>
+<br>
+    <!-- Formulaire Google intégré -->
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8-c9CYZa5BK5YYUTcrK0A1tOkDETferCrcp5Z1SsUevY-1g/viewform?embedded=true" 
+            width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 800px; border-radius: 10px;">Chargement…</iframe>
+    </div>
+
+    <!-- Footer amélioré avec icônes pour les infos de contact -->
+    <footer class="w3-padding-32" style="background-color: #FED3A8; color: #73150D;">
+        <div class="footer-content">
+            <p><b>Site réalisé par Paul-Franck Dencausse</b></p>
+    
+        </div>
+    </footer>
+    <script>
+        // Fonction pour ouvrir/fermer le menu mobile
+        function toggleMenu() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('w3-hide')) {
+                menu.classList.remove('w3-hide');
+            } else {
+                menu.classList.add('w3-hide');
+            }
+        }
+    
+        // Fonction pour le dropdown dans le menu mobile
+        function toggleDropdown() {
+            var dropdown = document.getElementById('mobile-dropdown');
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
