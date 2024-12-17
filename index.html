@@ -9,62 +9,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Inclusion de Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Style général du corps du texte */
-        body {
-            font-family: "Times New Roman", Georgia, Serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F8F8F8; /* Couleur de fond de la page */
-        }
-
-        /* Styles pour les titres h1 à h6 */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Playfair Display";
-            letter-spacing: 5px;
-        }
-
-        /* Navbar */
-        .w3-bar {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Sections */
-        .section-container {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #FED3A8;
-            color: #73150D;
-            padding: 2rem;
-            margin: 1rem 0;
-        }
-
-        .section-header {
-            text-align: center;
-            color: #CE6857;
-            margin-bottom: 1rem;
-        }
-
-        .section-content h4 {
-            color: #73150D;
-        }
-
-        /* Footer */
-        footer {
-            border-radius: 10px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .w3-image {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .w3-container a {
-            color: #73150D;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
@@ -127,7 +73,7 @@
 
     <!-- En-tête avec une image de bannière -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-        <img class="w3-image" src="bandeau.png" alt="bannière de la boucherie" width="1600" height="800">
+        <img class="w3-image" src="images/bandeau.png" alt="bannière de la boucherie" width="1600" height="800">
         <div class="w3-display-bottomleft w3-padding-large w3-opacity">
             <!-- Contenu positionné sur l'image (vide ici) -->
         </div>
@@ -140,7 +86,7 @@
         <div class="section-container w3-row w3-padding-64" id="about">
             <!-- Colonne avec image, cachée sur petits écrans -->
             <div class="w3-col m6 w3-padding-large w3-hide-small">
-                <img src="couple.jpg" class="w3-round w3-image w3-opacity-min" alt="intérieur de la boutique" width="600" height="750">
+                <img src="images/couple.jpg" class="w3-round w3-image w3-opacity-min" alt="intérieur de la boutique" width="600" height="750">
             </div>
             <!-- Colonne avec texte de présentation -->
             <div class="w3-col m6 w3-padding-large">
@@ -165,7 +111,7 @@
             </div>
             <!-- Colonne droite avec une image des viandes -->
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.novoviande.fr%2Fwp-content%2Fuploads%2F2017%2F12%2Fboeuf-angus-2.jpg&f=1&nofb=1&ipt=de4d451d2091699596e8c7104f3dca417774897baa079364a139b15e3b58b23a&ipo=images" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+                <img src="images/boeuf.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
             </div>
         </div>
 
@@ -183,7 +129,7 @@
             
             <!-- Image de la charcuterie à gauche -->
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Z8RXZEE2kEVa8Zn7GkddIQHaEK%26pid%3DApi&f=1&ipt=fc1e6c423e095b7755f810d7672e9ae62104b0ff04bbc54ca56ca826437c464a&ipo=images" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">
+                <img src="images/th-911077972.jpeg" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">
             </div>
         </div>
 
@@ -201,7 +147,7 @@
             </div>
             <!-- Colonne droite avec une image des viandes -->
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-3.journaldesfemmes.fr%2F-iQommLK6h3Jz0auHhIjlvl3RIc%3D%2F1240x%2Fsmart%2F37a4f6d14479473fa6590ec5592c2757%2Fccmcms-jdf%2F10766844.jpg&f=1&nofb=1&ipt=ab8456bb46ab96e2e60f96d5f4235166f84aa7f743b06cbf145d7e53bdb0e108&ipo=images" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+                <img src="images/ag.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
             </div>
         </div>
 
@@ -215,12 +161,12 @@
 
                 <h4>Porc</h4>
                 <p>Notre porc est tendre et savoureux, parfait pour vos barbecues ou vos plats traditionnels. Côtes, rôtis et saucisses disponibles.</p><br>
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.ca-central-1.amazonaws.com%2Fmedias-web.quebecbio.com%2Fuploads%2Fblog%2F_1500xAUTO_crop_center-center_none%2FPorc-10-P.jpg&f=1&nofb=1&ipt=62d0088a9ca2bb191d2bd6e9082d68b77ba00382e9dd116dc98a50fe1774554b&ipo=images" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">>
+
             </div>
             
             <!-- Image de la charcuterie à gauche -->
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.supermarche-match.lu%2Fuploads%2Fassets%2Fthemes%2Fla-viande-de-porc-plaisir-gourmand%2F_header%2FRoti-de-porc.jpg&f=1&nofb=1&ipt=5b98f4304b97d56f0e430938ce9a62a36f5350e0908a5bff0c464b4aa5515dbf&ipo=images" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">
+                <img src="images/charcuterie.jpg" class="w3-round w3-image w3-opacity-min" alt="charcuterie" style="width:100%">
             </div>
         </div>
 
@@ -234,7 +180,7 @@
             </div>
             <!-- Colonne droite avec une image des viandes -->
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-3.journaldesfemmes.fr%2FOfeCgZgO6F47Ka9EbDL6p9j41U8%3D%2F1240x%2Fsmart%2Fdaa5206ed12748d287c102e8c43118c8%2Fccmcms-jdf%2F10766845.jpg&f=1&nofb=1&ipt=6655f5b1fd5ba52172e02fed453afe2afc831378bcb76e08ac8759256cf63e43&ipo=images" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
+                <img src="images/pierrade.jpg" class="w3-round w3-image w3-opacity-min" alt="côte de boeuf" style="width:100%">
             </div>
         </div>
 
@@ -280,26 +226,8 @@
     <p class="w3-center"><b>Site réalisé par Paul-Franck Dencausse</b></p>
   
 </footer>
-<script>
-    // Fonction pour ouvrir/fermer le menu mobile
-    function toggleMenu() {
-        var menu = document.getElementById('mobile-menu');
-        if (menu.classList.contains('w3-hide')) {
-            menu.classList.remove('w3-hide');
-        } else {
-            menu.classList.add('w3-hide');
-        }
-    }
-
-    // Fonction pour le dropdown dans le menu mobile
-    function toggleDropdown() {
-        var dropdown = document.getElementById('mobile-dropdown');
-        if (dropdown.style.display === 'block') {
-            dropdown.style.display = 'none';
-        } else {
-            dropdown.style.display = 'block';
-        }
-    }
+<script src="script.js"></script>
+    
 </script>
 </body>
 

@@ -1,0 +1,104 @@
+/* Style général du corps du texte */
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+}
+
+/* Styles pour les titres h1 à h6 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 5px;
+}
+
+/* Navbar */
+.w3-bar {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.w3-bar-item {
+    font-weight: bold;
+}
+
+/* Sections */
+.section-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #FED3A8;
+    color: #73150D;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.section-header {
+    text-align: center;
+    color: #CE6857;
+    margin-bottom: 1rem;
+}
+
+.section-content h4 {
+    color: #73150D;
+}
+
+/* Formulaire */
+.form-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FED3A8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #73150D;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #CE6857;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #73150D;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-container button:hover {
+    background-color: #CE6857;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #FED3A8;
+    color: #73150D;
+    border-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.w3-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Liens */
+.w3-container a {
+    color: #73150D;
+}
